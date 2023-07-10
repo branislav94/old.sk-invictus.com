@@ -1,0 +1,353 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Invictus - Sportski klub</title>
+    <meta name="description" content="Sportski klub Invictus - kikboks i funkcionalni trening">
+    <meta name="keywords" content="sportski klub, kikboks, kickbox, crossfit, krosfit, funkcionalni trening, invictus, trening">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+    <link rel="icon" href="img/favicon.png">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/jquery.fancybox.css">
+    <link href="https://fonts.googleapis.com/css?family=Russo+One&amp;subset=cyrillic,latin-ext" rel="stylesheet">
+    <script src="js/jquery-3.1.1.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="http://ajax.googleapis.com/ajax/libs/angularjs/1.5.5/angular.min.js"></script>
+</head>
+
+<body id="crossfit-page">
+
+    <!-- Menu start -->
+    <header id="header-menu">
+        <div class="container">
+            <div class="col-md-2 col-sm-6">
+                <a class="navbar-logo" href="index.html"><img class="img-responsive" src="img/invictus-logo.png" alt=""></a>
+            </div>
+            <div class="col-md-10 hidden-sm hidden-xs pull-right">
+                <nav class="navbar-menu">
+                    <ul>
+                        <li><a href="index.html">Početna</a></li>
+                        <li><a href="kickbox.html">Kikboks</a></li>
+                        <li class="active"><a href="#">Funkcionalni trening</a></li>
+                        <!--                        <li><a href="#">Oprema</a></li>-->
+                        <li><a href="gallery.html">Galerija</a></li>
+                        <!--                        <li><a href="#">Blog</a></li>-->
+                        <li><a href="onama.html">O nama</a></li>
+                        <li><a href="contact.php">Kontakt</a></li>
+                    </ul>
+                </nav>
+            </div>
+            <div class="hidden-lg hidden-md col-sm-6 pull-right" id="nav-icon">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </div>
+    </header>
+    <!-- Menu end -->
+
+    <!-- Responsive menu start -->
+    <div class="sidenav" id="side-menu">
+        <a href="index.html">Početna</a>
+        <a href="kickbox.html">Kikboks</a>
+        <a href="crossfit.html">Funkcionalni trening</a>
+        <!--        <a href="#">Oprema</a>-->
+        <a href="gallery.html">Galerija</a>
+        <!--        <a href="#">Blog</a>-->
+        <a href="onama.html">O nama</a>
+        <a href="contact.php">Kontakt</a>
+    </div>
+    <!-- Responsive menu end -->
+
+
+    <!-- Slider start -->
+    <div id="carousel-example-generic" class="carousel slide" data-ride="carousel">
+        <!-- Wrapper for slides -->
+        <div class="carousel-inner" role="listbox">
+            <div class="item active">
+                <img src="img/slider-img-3.jpg" alt="invictus-slider-one">
+                <div class="carousel-caption">
+                    <img src="img/crossfit-slider-logo.png" alt="invictus-slider-logo">
+                    <h3>FUNKCIONALNI TRENING</h3>
+                </div>
+            </div>
+            <div class="item">
+                <img src="img/slider-img-5.jpg" alt="invictus-slider-two">
+                <div class="carousel-caption">
+                    <img src="img/crossfit-slider-logo.png" alt="invictus-slider-logo">
+                    <h3>FUNKCIONALNI TRENING</h3>
+                </div>
+            </div>
+            <div class="item">
+                <img src="img/slider-img-7.jpg" alt="invictus-slider-three">
+                <div class="carousel-caption">
+                    <img src="img/crossfit-slider-logo.png" alt="invictus-slider-logo">
+                    <h3>FUNKCIONALNI TRENING</h3>
+                </div>
+            </div>
+        </div>
+
+        <!-- Controls -->
+        <a class="left carousel-control" href="#carousel-example-generic" role="button" data-slide="prev">
+            <span>
+                <img src="img/slider-arrow-left.png" alt="invictus-arrow-left">
+            </span>
+            <span class="sr-only">Previous</span>
+        </a>
+        <a class="right carousel-control" href="#carousel-example-generic" role="button" data-slide="next">
+            <span>
+                <img class="img-responsive" src="img/slider-arrow-right.png" alt="invictus-arrow-right">
+            </span>
+            <span class="sr-only">Next</span>
+        </a>
+    </div>
+    <!-- Slider end -->
+
+    <!-- look down button start -->
+    <div id="look-down">
+        <a href="#crossfit"><img src="img/arrow-down.png" alt="invictus-arrow-down"></a>
+    </div>
+    <!-- look down button end -->
+
+    <!-- Tabs photo-video start -->
+    <div class="col-md-12" id="crossfit">
+        <div class="panel with-nav-tabs panel-default">
+            <div class="panel-heading">
+                <ul class="nav nav-tabs">
+                    <li class="active crossfit-tab-mobile"><a href="#crossfit-tabs" data-toggle="tab">FUNKCIONALNI TRENING</a></li>
+                    <li><a href="#trening-tabs" data-toggle="tab">TRENINZI</a></li>
+                </ul>
+            </div>
+            <div class="panel-body">
+                <div class="tab-content">
+                    <!-- photo gallery start -->
+                    <div class="tab-pane fade in active" id="crossfit-tabs">
+                        <div class="container">
+                            <h3>POVRATAK SPORTSKIM KORENIMA</h3>
+                            <p class="paragraf">Funkcionalni trening se može definisati kao pokret ili vežba koja nam omogućava da obavljamo svoje svakodnevne zadatke lakše i efikasnije. Kako bi se bavili ovim tipom treninga koristimo rekvizite i sredstva koja omogućavaju našem telu da se kreće bez ograničenja. Oni nam omogućavaju da se krećemo u svim ravnima i uključuju celo naše telo.</p>
+
+                            <p class="paragraf">Funkcionalni trening je kao koncept izrastao na čvrstim temeljima onoga što ljudi čine već hiljadama godinama. Naša tela su stvorena da se kreću na određeni način, način na koji je fokusiran funkcionalni trening, kako bi nam omogućio da optimalno obavimo ne samo svakodnevne zadatke i poslove već i podigao fizičku spremu pojedinca na jedan novi, viši nivo. Funkcionalni trening zato simbolizuje povratak čoveka starim vrednostima, kroz korišćenje prirodnih kretnji i funkcionisanja organizma.</p>
+
+                            <p class="paragraf">Postoji više glavnih zadataka koje treba da postignemo u našem treningu. Pokreti treba da budu višedimenzionalni, prolazeći kroz sve 3 ravni. Oni takođe treba da budu integrisani, tako da koristimo celo telo. Ali, pokreti isto tako treba da budu i kompleksni, tako da koristimo i mozak, kao i telo pri kretanju.</p>
+
+                            <p class="paragraf">Cilj nam je da stojimo na sopstvenim stopalima i ostvarujemo kontakt sa podlogom tokom pokreta. Funkcionalni trening takođe ima i zabavan karakter. Telo treba da bude izloženo fizičkom i mentalnom izazovu, pogotovo kada se koriste zanimljivi i raznovrsni rekviziti.</p>
+
+                            <p class="paragraf">Koristi funkcionalnog treninga za organizam su ogromne. On omogućavam da postignete skoro sve što želite. Izborom različitih funkcionalnih rekvizita i odabirom pravih vežbi, na poseban i zanimljiv način ćete ostvariti svoje zdravstvene i fitnes ciljeve.</p>
+
+                            <img class="img-responsive img-txt" src="img/img-6.jpg" alt="crossfit-invictus">
+
+                            <h3>IZUZETNE KORISTI FUNKCIONALNOG TRENINGA ZA ORGANIZAM</h3>
+
+
+
+                            <p class="heading">Rekvizite za funkcionalni trening koristimo za:</p>
+
+                            <ul class="paragraf">
+                                <li>Ubrzavanje metabolizma kako bismo smanjili masne naslage i postali vitkiji</li>
+                                <li>Intenzivni kardiovaskularni trening koji će pomoći poboljšanju našeg aerobnog i anaerobnog energetskog sistema</li>
+                                <li>Trening specifičnih sportskih tehnika</li>
+                                <li>Pomoć u prevenciji povreda i rehabilitaciji</li>
+                                <li>Poboljšanje držanja tela</li>
+                                <li>Poboljšanje naše funkcionalnosti i sposobnosti za obavljanje svakodnevnih poslova</li>
+                            </ul>
+
+
+
+
+                            <p class="paragraf">Funkcionalnim treningom mogu da se bave svi, početnici, mladi, stari, ali i profesionalni sportisti. Najpopularniji rekviziti za funkcionalni trening su: ketlbel (kettlebell), kor begs (core bags), merdevine za agilnost, prepone, ekspander za brzinu (speed resistor), boks oprema, medicinke, ploča za stabilnost (core board), olimpijski tegovi i šipke, polulopte, valjak za vežbanje (ViPR), trake (TRX), bugarske vreće… Trenutno ovakav vid treninga spada među najpopularnije sisteme treninga u svetu. Jedna od osoba najzaslužniji za njegovu popularnost je Marku Tvigt (Mark Twigt), koji je dobio zadatak da pripremi glumce i kaskadere za poznati film "300". Treninzi su bili veoma dramatični i dinamični, vežbe su se menjale na svakom treningu, a glumci su u veoma kratkom periodu uz rigoroznu dijetu postigli izuzetnu formu, dok su neki izgubili čak do 20kg</p>
+
+
+
+                            <p class="paragraf">Trening izuzetno odgovara pripadnicima specijalnih jedinica, takmičarima ekstremnih i borilačkih sportova, ali i drugima kao nadopuna ili promena jer je vrlo prilagodljiv. Pravi funkcionalni trening je najkompletniji način treniranja jer radi na svim bitnim faktorima; snazi, kondiciji, eksplozivnosti, brzini i izdržljivosti. Moglo bi se reći da je iz svih sportova uzeto ono najučinkovitije te složeno u jedan veoma raznolik koncept! Kod svih vežbi suština je da radi što više mišića istovremeno, a velika većina vežbi najviše pogađa trbuh i donji deo leđa, što su kod većine i najslabije karike. Ako se tome dodaju i minimalni odmori između vežbi, dobijamo vrlo moćno oruđe za sagorevanje masti i izgradnju mišića! Upravo zbog te kombinacije vežbi koje aktiviraju sve mišiće u telu te minimalnih odmora, ovakav način treniranja je vrlo iscrpljujući, fizički i psihički, ali se telo izuzetno brzo oporavlja i gradi kvalitetna mišićna masa.</p>
+
+                            <p class="paragraf">Kod dizajniranja funkcionalnih trening programa bitno je uvrstiti što manje vežbi sa što više učinka, te se ponekad ceo trening sastoji od samo dve vežbe (npr: mrtvo dizanje i rameni potisak). Naizgled se čini lako, jednostavno i nedovoljno za neke ozbiljnije rezultate, ali svaki iskusniji dizač tegova zna da sa mrtvim dizanjem radi svaki mišić u telu osim prsa i ramena (prednja strana), te zato uz rameni potisak dobijamo vrlo jaku kombinaciju za izgradnju mišića u celom telu, a u zavisnosti od odmora između serija i kilaže vrlo efikasno sagorevamo masno tkivo jer se aktivira veliki broj i raspon mišića. Ovakav trening ubrzava bazalni metabolizam na način da telo troši povećanu količinu kalorija čak i u mirovanju.</p>
+
+                            <p class="heading">Bazne vežbe koje se koriste kod funkcionalnog treninga:</p>
+                            <ul class="paragraf">
+                                <li>izbačaji, nabačaji, trzaji, njihanje sa zvonima </li>
+                                <li>udaranje u pod, bacanje, skakanje, sklekovi sa medicinkama</li>
+                                <li>zgibovi i njihanje konopa </li>
+                                <li>sve tehnike skakanja s vijačom</li>
+                                <li>sve vrste skokova na pliometrijske kutije</li>
+                                <li>sve vrste zgibova,sklekova, izometrijskih držanja na karikama</li>
+                                <li>sve vežbe snage s težinom vlastitog tela itd.</li>
+                            </ul>
+
+                            <br>
+
+                            <div class="col-md-6">
+                                <img class="img-responsive img-txt" src="img/img-7.jpg" alt="crossfit-invictus">
+                            </div>
+
+                            <div class="col-md-6">
+                                <img class="img-responsive img-txt" src="img/img-5.jpg" alt="crossfit-invictus">
+                            </div>
+
+
+                            <br>
+                            <p class="heading">Prednosti ovakvog treninga:</p>
+                            <ol class="paragraf">
+                                <li>Povećanje svih energetskih sistema</li>
+                                <li>Poboljšanje kompozicije tela</li>
+                                <li>Povećanje mišićne mase i snage</li>
+                                <li>Povećanje radnog kapaciteta vežbanja</li>
+                                <li>Raznolikost trening programa</li>
+                            </ol>
+
+                            <p class="paragraf">Fizička pripremljenost, snaga i kondicija, je veoma važna u svakom sportu, naročito u profesionalnom, gde u kombinaciji sa eksplozivnošću dovodi do pravih rezultata na sportskim takmičenjima. Svaki sport je specifičan i zbog toga zahteva poseban pristup i detaljnu analizu. Kada se rade treninzi snage i kondicije, programi koji su uobičajeni u teretanama i fitness centrima ne donose željene rezultate jer se pomoću njih rade vežbe pojedinačno po mišićnim particijama. Najbolji princip je funkcionalni trening, gde se prilikom treninga angažuju sve mišićne particije, naročito trup i noge. U našem klubu svi sportisti, profesionalni i rekreativni dobiće trening spram svojih potreba, i sa najmanjim utroškom vremena pri postizanju najboljih rezultata</p>
+
+                        </div>
+                    </div>
+                    <!-- video gallery start -->
+                    <div class="tab-pane fade" id="trening-tabs">
+                        <div class="container">
+
+                            <div class="col-md-12" id="training-about">
+                                <div class="row">
+                                    <div class="col-md-4 col-sm-6 col-xs-12">
+                                        <img class="img-responsive img-round" src="img/crossfit-trening-1.png" alt="crossfit-trening-invictus">
+                                        <h2>SNAGA</h2>
+                                        <!--
+                                        <hr>
+                                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Minus, quia quaerat, quae eum harum natus voluptatem. Commodi recusandae sequi iste sit quasi eaque possimus enim voluptate distinctio, laborum libero accusamus.</p>
+-->
+                                    </div>
+                                    <div class="col-md-4 col-sm-6 col-xs-12">
+                                        <img class="img-responsive img-round" src="img/crossfit-trening-2.png" alt="crossfit-trening-invictus">
+                                        <h2>BRZINA</h2>
+                                        <!--
+                                        <hr>
+                                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Minus, quia quaerat, quae eum harum natus voluptatem. Commodi recusandae sequi iste sit quasi eaque possimus enim voluptate distinctio, laborum libero accusamus.</p>
+-->
+                                    </div>
+
+                                    <div class="col-md-4 col-sm-6 col-xs-12">
+                                        <img class="img-responsive img-round" src="img/crossfit-trening-3.png" alt="crossfit-trening-invictus">
+                                        <h2>IZDRŽLJIVOST</h2>
+                                        <!--
+                                        <hr>
+                                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Minus, quia quaerat, quae eum harum natus voluptatem. Commodi recusandae sequi iste sit quasi eaque possimus enim voluptate distinctio, laborum libero accusamus.</p>
+-->
+                                    </div>
+
+                                    <div class="col-md-4 col-md-offset-2 col-sm-6 col-xs-12">
+                                        <img class="img-responsive img-round" src="img/crossfit-trening-4.png" alt="crossfit-trening-invictus">
+                                        <h2>FLEKSIBILNOST I OBIM POKRETA</h2>
+                                        <!--
+                                        <hr>
+                                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Minus, quia quaerat, quae eum harum natus voluptatem. Commodi recusandae sequi iste sit quasi eaque possimus enim voluptate distinctio, laborum libero accusamus.</p>
+-->
+                                    </div>
+                                    <div class="col-md-4 col-sm-12 col-xs-12">
+                                        <img class="img-responsive img-round" src="img/crossfit-trening-5.png" alt="crossfit-trening-invictus">
+                                        <h2>AEROBNI I ANAEROBNI KAPACITET ORGANIZMA</h2>
+                                        <!--
+                                        <hr>
+                                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Minus, quia quaerat, quae eum harum natus voluptatem. Commodi recusandae sequi iste sit quasi eaque possimus enim voluptate distinctio, laborum libero accusamus.</p>
+-->
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="col-md-12" id="training-terms">
+                                <div class="row">
+                                    <div class="col-md-6 col-sm-12" id="training-txt">
+                                        <h2>TERMINI TRENINGA</h2>
+                                        <p>SVAKIM RADNIM DANOM OD:
+                                            <br> 10:15, 17:30, 18:30, i 19:30h</p>
+                                        <p>OPEN GYM - SUBOTOM OD: 11 DO 14h</p>
+                                        <h2>CENA:</h2>
+                                        <p>3600.00 dinara - mesečno</p>
+                                        <a href="contact.html"><button class="btn contact-us-btn">KONTAKTIRAJTE NAS</button></a>
+                                    </div>
+                                    <div class="col-md-6 col-sm-12" id="training-img">
+                                        <img class="img-responsive" src="img/crossfit-training-tabs.jpg" alt="crossfit-treninzi">
+                                    </div>
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Tabs photo-video end -->
+
+
+    <!-- Before footer logos start -->
+    <section class="col-md-12" id="before-footer-logos">
+        <div class="col-md-4 col-sm-4 col-xs-12">
+            <a href="kickbox.html"><img class="img-responsive" src="img/footer-kickbox-logo.png" alt="footer-kickbox-logo"></a>
+        </div>
+        <div class="col-md-4 col-sm-4 col-xs-12">
+            <a href="onama.html"><img class="img-responsive" src="img/footer-invictus-logo.png" alt="footer-invictus-logo"></a>
+        </div>
+        <div class="col-md-4 col-sm-4 col-xs-12">
+            <a href="crossfit.html"><img class="img-responsive" src="img/footer-crossfit-logo.png" alt="footer-crossfit-logo"></a>
+        </div>
+    </section>
+    <!-- Before footer logos end -->
+
+
+
+    <!-- Footer start -->
+    <footer class="footer clearfix">
+
+        <div class="col-md-12" id="footer">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-4 col-xs-12" id="contact-us">
+                        <h5>KONTAKTIRAJTE NAS</h5>
+                        <ul>
+                            <li><span><img src="img/adress-icon-footer.png" alt="invictus-adress-icon"></span> Mirijevski bulevar 5a/b, 11060 Beograd</li>
+                            <li><span><img src="img/phone-icon-footer.png" alt="invictus-phone-icon"></span> +381 (0) 64 440 66 33</li>
+                            <li><span><img src="img/email-icon-footer.png" alt="invictus-email-icon"></span><a href="mailto:nvictussportclub@gmail.com">invictussportclub@gmail.com</a></li>
+                        </ul>
+
+                    </div>
+                    <div class="col-md-5 col-xs-12" id="training-period">
+                        <h5>RASPORED TRENINGA</h5>
+                        <ul>
+                            <li><span>Rekreativni kikboks: </span>svakog radnog dana od 20:30h</li>
+                            <li><span>Funkcionalni trening: </span>svakog radnog dana od 10:15,<br> 17:30, 18:30, i 19:30h</li>
+                            <li><span>Open gym: </span>subota 11-14h</li>
+                        </ul>
+
+                    </div>
+                    <div class="col-md-3 col-xs-12" id="social-network">
+                        <h5>DRUŠTVENE MREŽE</h5>
+                        <ul>
+                            <li>
+                                <a href="https://sr-rs.facebook.com/INVICTUS.sportskiklub/" target="_blank"><img src="img/facebook-icon-footer.png" alt="facebook-icon-footer"></a>
+                            </li>
+                            <li>
+                                <a href="https://www.youtube.com/channel/UC96F8ocUFm30BnSVp3zSiSg" target="_blank"><img src="img/youtube-icon-footer.png" alt="youtube-icon-footer"></a>
+                            </li>
+                        </ul>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-12" id="copyright">
+                <div class="container">
+                    <p>© Copyright
+                        <script>
+                            document.write(new Date().getFullYear())
+                        </script>
+                        Invictus. All rights reserved.
+                        <br>Design & Development by <a href="http://markostalma.ninja/" target="_blank">Stalma</a></p>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <!-- Footer end -->
+    <script src="js/jquery.fancybox.pack.js"></script>
+    <script src="js/main.js"></script>
+</body>
+
+</html>

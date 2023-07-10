@@ -1,0 +1,235 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Invictus - Sportski klub</title>
+    <meta name="description" content="Sportski klub Invictus - kikboks i funkcionalni trening">
+    <meta name="keywords" content="sportski klub, kikboks, kickbox, crossfit, krosfit, funkcionalni trening, invictus, trening">
+    <link rel="icon" href="img/favicon.png">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/style.css">
+    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCn05A1D0zzBZUIt-kg33yFbbBSwekonfM&callback=initMap" async defer></script>
+    <script src="js/jquery-3.1.1.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+    <link href="https://fonts.googleapis.com/css?family=Russo+One&amp;subset=cyrillic,latin-ext" rel="stylesheet">
+</head>
+
+<body id="contact-page">
+
+    <!-- Menu start -->
+    <header id="header-menu">
+        <div class="container">
+            <div class="col-md-2 col-sm-6">
+                <a class="navbar-logo" href="index.html"><img class="img-responsive" src="img/invictus-logo.png" alt=""></a>
+            </div>
+            <div class="col-md-10 hidden-sm hidden-xs pull-right">
+                <nav class="navbar-menu">
+                    <ul>
+                        <li><a href="index.html">Početna</a></li>
+                        <li><a href="kickbox.html">Kikboks</a></li>
+                        <li><a href="crossfit.html">Funkcionalni trening</a></li>
+<!--                        <li><a href="#">Oprema</a></li>-->
+                        <li><a href="gallery.html">Galerija</a></li>
+<!--                        <li><a href="#">Blog</a></li>-->
+                        <li><a href="onama.html">O nama</a></li>
+                        <li class="active"><a href="contact.html">Kontakt</a></li>
+                    </ul>
+                </nav>
+            </div>
+            <div class="hidden-lg hidden-md col-sm-6 pull-right" id="nav-icon">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </div>
+    </header>
+    <!-- Menu end -->
+
+    <!-- Responsive menu start -->
+    <div class="sidenav" id="side-menu">
+        <a href="index.html">Početna</a>
+        <a href="kickbox.html">Kikboks</a>
+        <a href="crossfit.html">Funkcionalni trening</a>
+<!--        <a href="#">Oprema</a>-->
+        <a href="gallery.html">Galerija</a>
+<!--        <a href="#">Blog</a>-->
+        <a href="onama.html">O nama</a>
+        <a href="contact.html">Kontakt</a>
+    </div>
+    <!-- Responsive menu end -->
+
+    <!-- Contact form start -->
+    <section class="col-md-12" id="contact-form-info">
+       <div class="container">
+        <div class="col-md-7">
+            <h2>KONTAKT</h2>
+            <form class="form-horizontal" role="form" method="post" action="">
+                <div class="form-group">
+                    <div class="col-sm-12">
+                        <input type="text" class="form-control" id="name" name="name" placeholder="IME I PREZIME" value="">
+                    </div>
+                </div>
+                <div class="form-group">
+                    <div class="col-sm-12">
+                        <input type="email" class="form-control" id="email" name="email" placeholder="EMAIL ADRESA" value="">
+                    </div>
+                </div>
+                <div class="form-group">
+                    <div class="col-sm-12">
+                        <input type="text" class="form-control" id="subject" name="subject" placeholder="NASLOV PORUKE" value="">
+                    </div>
+                </div>
+                <div class="form-group">
+                    <div class="col-sm-12">
+                        <textarea class="form-control" rows="5" name="message" placeholder="PORUKA"></textarea>
+                    </div>
+                </div>
+                <div class="form-group">
+                    <label for="human" class="col-sm-2 control-label">2 + 3 = ?</label>
+                    <div class="col-sm-10">
+                        <input type="text" class="form-control" id="human" name="human" placeholder="TVOJ ODGOVOR">
+                    </div>
+                </div>
+                <div class="form-group">
+                    <div class="col-sm-12">
+                        <input id="submit" name="submit" type="submit" value="POŠALJI PORUKU" class="btn btn-primary btn-send">
+                    </div>
+                </div>
+                <div class="form-group">
+                    <div class="col-sm-10 col-sm-offset-2">
+                        <! Will be used to display an alert to the user>
+                    </div>
+                </div>
+            </form>
+        </div>
+        <div class="col-md-5" id="contact-info">
+            <div class="col-md-12">
+                <img id="contact-logo" src="img/invictus-contact-logo.png" alt="invictus-contact-logo">
+            </div>
+
+            <div class="col-md-12" id="contact-txt">
+                <h3>INVICTUS SPORTSKI KLUB</h3>
+                <ul>
+                    <li><span><img src="img/adress-icon-contact.png" alt="invictus-adress-icon"></span> Mirijevski bulevar 5a/b, 11060 Beograd</li>
+                    <li><span><img src="img/phone-icon-contact.png" alt="invictus-phone-icon"></span> +381 (0) 64 440 66 33</li>
+                    <li><span><img src="img/email-icon-contact.png" alt="invictus-email-icon"> </span><a href="mailto:nvictussportclub@gmail.com"> invictussportclub@gmail.com</a></li>
+                    <li>PIB: 107672728;  MB: 28780591;</li>
+                    <li>ŽIRO RAČUN:<br>265625031000026194</li>
+                </ul>
+
+                <ul id="social-icon-contact">
+                    <li> <a href="#"><img src="img/facebook-icon-contact.png" alt="facebook-icon-contact"></a></li>
+                    <li> <a href="#"><img src="img/twitter-icon-contact.png" alt="twitter-icon-contact"></a></li>
+                    <li><a href="#"><img src="img/youtube-icon-contact.png" alt="youtube-icon-contact"></a></li>
+                </ul>
+            </div>
+        </div>
+        </div>
+
+    </section>
+    <!-- Contact form end -->
+
+
+    <!-- Business cooperation start -->
+    <div class="col-md-12" id="business-cooperation">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-9 col-xs-12">
+                    <h4>Nudimo Vam poslovnu saradnju. Očekuju vas vrhunski uslovi i povoljne cene.</h4>
+                </div>
+                <div class="col-md-3 col-xs-12">
+                    <button class="btn more">VIŠE</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Business cooperation end -->
+
+    <!-- Google maps start -->
+    <section class="col-md-12" id="google-map">
+        <div id="bg-map"></div>
+        <div id="map-canvas"></div>
+    </section>
+    <!-- Google maps end -->
+
+    <!-- Before footer logos start -->
+    <section class="col-md-12" id="before-footer-logos">
+        <div class="col-md-4 col-sm-4 col-xs-12">
+            <a href="kickbox.html"><img class="img-responsive" src="img/footer-kickbox-logo.png" alt="footer-kickbox-logo"></a>
+        </div>
+        <div class="col-md-4 col-sm-4 col-xs-12">
+            <a href="onama.html"><img class="img-responsive" src="img/footer-invictus-logo.png" alt="footer-invictus-logo"></a>
+        </div>
+        <div class="col-md-4 col-sm-4 col-xs-12">
+            <a href="crossfit.html"><img class="img-responsive" src="img/footer-crossfit-logo.png" alt="footer-crossfit-logo"></a>
+        </div>
+    </section>
+    <!-- Before footer logos end -->
+
+
+
+    <!-- Footer start -->
+    <footer class="footer clearfix">
+
+        <div class="col-md-12" id="footer">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-4 col-xs-12" id="contact-us">
+                        <h5>KONTAKTIRAJTE NAS</h5>
+                        <ul>
+                            <li><span><img src="img/adress-icon-footer.png" alt="invictus-adress-icon"></span> Mirijevski bulevar 5a/b, 11060 Beograd</li>
+                            <li><span><img src="img/phone-icon-footer.png" alt="invictus-phone-icon"></span> +381 (0) 64 440 66 33</li>
+                            <li><span><img src="img/email-icon-footer.png" alt="invictus-email-icon"></span><a href="mailto:nvictussportclub@gmail.com">invictussportclub@gmail.com</a></li>
+                        </ul>
+
+                    </div>
+                    <div class="col-md-5 col-xs-12" id="training-period">
+                        <h5>RASPORED TRENINGA</h5>
+                        <ul>
+                            <li><span>Kikboks: </span>svakog radnog dana od 21h</li>
+                            <li><span>Funkcionalni trening: </span>svakog radnog dana od 10, 17, 18, 19, 20h</li>
+                            <li><span>Open gym: </span>subota 10-14h</li>
+                        </ul>
+
+                    </div>
+                    <div class="col-md-3 col-xs-12" id="social-network">
+                        <h5>DRUŠTVENE MREŽE</h5>
+                        <ul>
+                            <li>
+                                <a href="#"><img src="img/facebook-icon-footer.png" alt="facebook-icon-footer"></a>
+                            </li>
+                            <li>
+                                <a href="#"><img src="img/twitter-icon-footer.png" alt="twitter-icon-footer"></a>
+                            </li>
+                            <li>
+                                <a href="#"><img src="img/youtube-icon-footer.png" alt="youtube-icon-footer"></a>
+                            </li>
+                            <li>
+                                <a href="#"><img src="img/linkedin-icon-footer.png" alt="linkedin-icon-footer"></a>
+                            </li>
+                        </ul>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-12" id="copyright">
+                <div class="container">
+                    <p>© Copyright 2017
+                        <!-- <?= date(Y); ?> -->Invictus. All rights reserved.
+                        <br>Design by <a href="http://emendistudio.com/" target="_blank">Emendi Studio</a></p>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <!-- Footer end -->
+
+    <script src="js/jquery.ui.map.min.js"></script>
+    <script src="js/map.js"></script>
+    <script src="js/main.js"></script>
+</body>
+
+</html>

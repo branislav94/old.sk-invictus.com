@@ -1,0 +1,1599 @@
+/*== RESETS SOME STUFF ==*/
+
+html {
+    height: 100%;
+}
+
+body {
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    font-family: 'Russo One', sans-serif;
+    overflow-x: hidden;
+    -webkit-animation-delay: 0.1s;
+    -webkit-animation-name: fontfix;
+    -webkit-animation-duration: 0.1s;
+    -webkit-animation-iteration-count: 1;
+    -webkit-animation-timing-function: linear;
+}
+
+@-webkit-keyframes fontfix {
+    from {
+        opacity: 1;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+a:hover,
+a:active,
+a:focus,
+a:visited {
+    text-decoration: none;
+}
+
+::-webkit-scrollbar {
+    width: 12px;
+}
+
+::-webkit-scrollbar-track {
+    -webkit-box-shadow: inset 0 0 6px #1a1a1a;
+}
+
+::-webkit-scrollbar-thumb {
+    -webkit-box-shadow: inset 0 0 6px #1a1a1a;
+    background-color: #bf1c22;
+}
+
+
+/*== HEADER ==*/
+
+header#header-menu {
+    width: 100%;
+    overflow: hidden;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 999;
+    margin: 0 auto;
+    padding: 20px 0;
+    text-align: center;
+    background-color: transparent;
+}
+
+#about-us-page header#header-menu,
+#contact-page header#header-menu,
+#gallery-page header#header-menu {
+    background-color: #1a1a1a;
+    position: fixed;
+}
+
+#about-us-page header#header-menu .container,
+#contact-page header#header-menu .container,
+#gallery-page header#header-menu .container {
+    border-bottom: none;
+    padding-bottom: 0;
+}
+
+
+/*-- header smaller effect --*/
+
+header.smaller {
+    background-color: #1a1a1a!important;
+    padding: 10px 0;
+    box-shadow: 0 3px 5px black;
+    transition: all 0.5s;
+    -moz-transition: all 0.5s;
+    -webkit-transition: all 0.5s;
+    -o-transition: all 0.5s;
+}
+
+header.smaller .container {
+    border-bottom: none!important;
+    padding-bottom: 0!important;
+}
+
+header.smaller img {
+    width: 287px;
+    height: 53%;
+    margin: -15 0;
+}
+
+header.smaller .navbar-menu {
+    margin-top: 5px;
+}
+
+header.smaller .navbar-logo img {
+    width: 53%;
+    height: auto;
+    -webkit-transition: width 0.5s;
+    -moz-transition: width 0.5s;
+    -ms-transition: width 0.5s;
+    -o-transition: width 0.5s;
+    transition: width 0.5s;
+}
+
+header#header-menu .container {
+    border-bottom: 1px solid #fff;
+    padding: 0;
+    margin: 0 auto;
+    padding-bottom: 20px;
+}
+
+header,
+nav,
+ul,
+a,
+img,
+li {
+    transition: all 0.5s;
+    -moz-transition: all 0.5s;
+    -webkit-transition: all 0.5s;
+    -o-transition: all 0.5s;
+}
+
+
+/*-- Menu --*/
+
+nav.navbar-menu {
+    margin-top: 20px;
+}
+
+nav.navbar-menu .active a {
+    text-decoration: none;
+    color: #818181;
+}
+
+.navbar-menu ul {
+    list-style-type: none;
+    float: right;
+}
+
+.navbar-menu ul li {
+    display: inline-block;
+    padding-right: 25px;
+}
+
+.navbar-menu ul li:last-of-type {
+    padding-right: 0;
+}
+
+.navbar-menu ul li a {
+    color: #fff;
+    text-transform: uppercase;
+}
+
+
+/*-- Menu hover effect --*/
+
+.navbar-menu ul li a:hover {
+    font-weight: 600;
+    text-decoration: none;
+    -webkit-transition-property: all;
+    transition-property: all;
+    -webkit-transition-duration: 0.3s;
+    transition-duration: 0.3s;
+    -webkit-transition-timing-function: ease-out;
+    transition-timing-function: ease-out;
+}
+
+.navbar-menu ul li a {
+    display: inline-block;
+    vertical-align: middle;
+    -webkit-transform: perspective(1px) translateZ(0);
+    transform: perspective(1px) translateZ(0);
+    box-shadow: 0 0 1px transparent;
+    position: relative;
+}
+
+.navbar-menu ul li a:before {
+    content: "";
+    position: absolute;
+    z-index: 9999;
+    left: 50%;
+    right: 50%;
+    top: 22px;
+    background: #fff;
+    height: 3px;
+    -webkit-transition-property: left, right;
+    transition-property: left, right;
+    -webkit-transition-duration: 0.2s;
+    transition-duration: 0.2s;
+    -webkit-transition-timing-function: ease-out;
+    transition-timing-function: ease-out;
+}
+
+.navbar-menu ul li a:hover:before,
+.navbar-menu ul li a:focus:before,
+.navbar-menu ul li a:active:before {
+    left: 0;
+    right: 0;
+}
+
+.navbar-logo img:hover {
+    -webkit-filter: drop-shadow(0 0 3px #000);
+    filter: drop-shadow(0 0 3px #000);
+    cursor: pointer;
+}
+
+
+/*--- Responsive menu ---*/
+
+header#header-menu #nav-icon {
+    width: 40px;
+    height: auto;
+    margin-right: 25px;
+    -webkit-transform: rotate(0deg);
+    -moz-transform: rotate(0deg);
+    -o-transform: rotate(0deg);
+    transform: rotate(0deg);
+    -webkit-transition: .5s ease-in-out;
+    -moz-transition: .5s ease-in-out;
+    -o-transition: .5s ease-in-out;
+    transition: .5s ease-in-out;
+    cursor: pointer;
+}
+
+header#header-menu #nav-icon span {
+    display: block;
+    position: absolute;
+    height: 5px;
+    width: 100%;
+    background: #fff;
+    border-radius: 8px;
+    opacity: 1;
+    left: 0;
+    -webkit-transform: rotate(0deg);
+    -moz-transform: rotate(0deg);
+    -o-transform: rotate(0deg);
+    transform: rotate(0deg);
+    -webkit-transition: .25s ease-in-out;
+    -moz-transition: .25s ease-in-out;
+    -o-transition: .25s ease-in-out;
+    transition: .25s ease-in-out;
+}
+
+header#header-menu #nav-icon span:nth-child(1) {
+    top: 0px;
+    -webkit-transform-origin: left center;
+    -moz-transform-origin: left center;
+    -o-transform-origin: left center;
+    transform-origin: left center;
+}
+
+header#header-menu #nav-icon span:nth-child(2) {
+    top: 12px;
+    -webkit-transform-origin: left center;
+    -moz-transform-origin: left center;
+    -o-transform-origin: left center;
+    transform-origin: left center;
+}
+
+header#header-menu #nav-icon span:nth-child(3) {
+    top: 24px;
+    -webkit-transform-origin: left center;
+    -moz-transform-origin: left center;
+    -o-transform-origin: left center;
+    transform-origin: left center;
+}
+
+header#header-menu #nav-icon.open span:nth-child(1) {
+    -webkit-transform: rotate(45deg);
+    -moz-transform: rotate(45deg);
+    -o-transform: rotate(45deg);
+    transform: rotate(45deg);
+    top: -3px;
+    left: 8px;
+}
+
+header#header-menu #nav-icon.open span:nth-child(2) {
+    width: 0%;
+    opacity: 0;
+}
+
+header#header-menu #nav-icon.open span:nth-child(3) {
+    -webkit-transform: rotate(-45deg);
+    -moz-transform: rotate(-45deg);
+    -o-transform: rotate(-45deg);
+    transform: rotate(-45deg);
+    top: 26px;
+    left: 8px;
+}
+
+.sidenav {
+    display: none;
+    height: 100%;
+    width: 0px;
+    position: fixed;
+    z-index: 99;
+    top: 0;
+    right: 0;
+    background-color: #1a1a1a;
+    overflow-x: hidden;
+    padding-top: 80px;
+    transition: 0.5s;
+}
+
+.width300 {
+    width: 300px!important;
+}
+
+.sidenav a {
+    padding: 8px 8px 8px 32px;
+    text-decoration: none;
+    font-size: 22px;
+    color: #818181;
+    display: block;
+    transition: 0.5s
+}
+
+.sidenav a:hover,
+.offcanvas a:focus {
+    color: #f1f1f1;
+}
+
+
+/*-- Slider --*/
+
+.carousel {
+    -webkit-transform: translateZ(0);
+    font-smooth: never;
+}
+
+.carousel,
+.item,
+.active,
+.carousel-inner {
+    height: 100%;
+}
+
+.carousel-control img {
+    position: absolute;
+    display: inline-block;
+    top: 50%;
+    z-index: 5;
+}
+
+.carousel-caption img {
+    width: 60%;
+    height: auto;
+}
+
+.carousel-caption img:hover {
+    -webkit-filter: drop-shadow(0 0 3px #000);
+    filter: drop-shadow(0 0 5px #000);
+    cursor: pointer;
+}
+
+.carousel-inner>.item {
+    opacity: 0;
+    top: 0;
+    left: 0;
+    width: 100%;
+    display: block;
+    position: absolute;
+    z-index: 0;
+    -webkit-transition: none;
+    -o-transition: none;
+    transition: none;
+    -webkit-transform: translate3d(0, 0, 0) !important;
+    transform: translate3d(0, 0, 0) !important;
+}
+
+.carousel-inner>.item:first-of-type {
+    position: relative;
+}
+
+.carousel-inner>.active {
+    opacity: 1;
+    z-index: 3;
+}
+
+.carousel-inner>.next.left,
+.carousel-inner>.prev.right {
+    -webkit-transition: opacity 0.6s ease-in-out;
+    -o-transition: opacity 0.6s ease-in-out;
+    transition: opacity 0.6s ease-in-out;
+    opacity: 1;
+    left: 0;
+    z-index: 2;
+}
+
+.carousel-control {
+    z-index: 4;
+    padding-top: 10%;
+    width: 5%;
+}
+
+
+/*== BODY ==*/
+
+
+/*--- HOME PAGE ---*/
+
+
+/*-- Business cooperation --*/
+
+#business-cooperation {
+    background-color: #1a1a1a;
+    color: #fff;
+    padding: 0;
+}
+
+#look-down {
+    width: 100%;
+    height: 35px;
+    background-image: url('../img/look-down.png');
+    background-position: top center;
+    background-repeat: no-repeat;
+    position: absolute;
+    bottom: 95px;
+    z-index: 99;
+    text-align: center;
+}
+
+#business-cooperation #look-down img {
+    margin: 12px 4px 0 0;
+}
+
+#business-cooperation #look-down img:hover {
+    cursor: pointer;
+}
+
+#business-cooperation h4 {
+    padding: 30px 20px;
+    margin-left: 50px;
+}
+
+#business-cooperation .btn {
+    background-color: #bf1c22;
+    color: #fff;
+    padding: 5px 60px;
+    margin: 30px 35px;
+    border-radius: 20px;
+    border: 2px solid transparent;
+    -webkit-transition: 0.5s;
+    transition: 0.5s;
+}
+
+#business-cooperation .btn:hover,
+#business-cooperation .btn:active {
+    border: 2px solid #fff;
+}
+
+
+/*-- About us --*/
+
+#about-us-page #about-us {
+    margin-top: 100px;
+}
+
+#about-us {
+    width: 100%;
+    background-color: #eef1ec;
+}
+
+#about-us img {
+    padding: 120px 0;
+    margin: 0 auto;
+    display: block;
+}
+
+#about-us-flip img:hover {
+    -webkit-transform: rotateY(180deg);
+    -moz-transform: rotateY(180deg);
+    -o-transform: rotateY(180deg);
+    transform: rotateY(180deg);
+    cursor: pointer;
+}
+
+#about-us h2 {
+    font-size: 40px;
+    color: #1a1a1a;
+    padding: 60px 0 30px 0;
+    -webkit-transition: 0.3s;
+    -moz-transition: 0.3s;
+    -ms-transition: 0.3s;
+    -o-transition: 0.3s;
+    transition: 0.3s;
+}
+
+#about-us h2:hover {
+    text-shadow: -1px 0 #bf1c22, 0 1px #bf1c22, 1px 0 #bf1c22, 0 -1px #bf1c22;
+}
+
+#about-us p {
+    color: #bf1c22;
+    font-size: 24px;
+    letter-spacing: 1px;
+}
+
+#about-us .btn {
+    margin: 30px 0;
+    background-color: #1a1a1a;
+    color: #fff;
+    padding: 10px 45px;
+    border-radius: 30px;
+    border: 2px solid transparent;
+    box-sizing: border-box;
+    -webkit-transition: 0.5s;
+    transition: 0.5s;
+}
+
+#about-us .btn:hover {
+    border: 2px solid #bf1c22;
+    color: #bf1c22;
+}
+
+
+/*-- Crossfit --*/
+
+#crossfit-section {
+    width: 100%;
+    height: 650px;
+    background-image: url("../img/parallax-crossfit-bg.jpg");
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    border-bottom: 2px solid #fff;
+}
+
+#crossfit-respo-logo img {
+    margin: 0 auto;
+}
+
+#crossfit-section #crossfit-flip .front img {
+    padding: 120px 0;
+    margin: 0 auto;
+    display: block;
+}
+
+#crossfit-section #crossfit-flip {
+    -webkit-transition: 0.5s;
+    -webkit-transform-style: preserve-3d;
+    -moz-transition: 0.5s;
+    -moz-transform-style: preserve-3d;
+    -o-transition: 0.5s;
+    -o-transform-style: preserve-3d;
+    transition: 0.5s;
+    transform-style: preserve-3d;
+    position: relative;
+    -webkit-backface-visibility: hidden;
+    -moz-backface-visibility: hidden;
+    -o-backface-visibility: hidden;
+    backface-visibility: hidden;
+}
+
+#crossfit-section #crossfit-flip:hover {
+    -webkit-transform: rotateY(180deg);
+    -moz-transform: rotateY(180deg);
+    -o-transform: rotateY(180deg);
+    transform: rotateY(180deg);
+    cursor: pointer;
+}
+
+#crossfit-section #crossfit-flip .front,
+#crossfit-section #crossfit-flip .back {
+    -webkit-backface-visibility: hidden;
+    -moz-backface-visibility: hidden;
+    -o-backface-visibility: hidden;
+    backface-visibility: hidden;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+#crossfit-section #crossfit-flip .back {
+    background-image: url(../img/crossfit-logo-section-back.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    opacity: 0.7;
+    margin: 120px 0;
+    width: 100%;
+    height: 430px;
+    -webkit-transform: rotateY(180deg);
+    -moz-transform: rotateY(180deg);
+    -o-transform: rotateY(180deg);
+    transform: rotateY(180deg);
+}
+
+#crossfit-section #crossfit-flip .back p {
+    text-align: center;
+    color: #1a1a1a;
+    margin-top: 43%;
+    font-size: 25px;
+}
+
+#crossfit-section h2 {
+    font-size: 40px;
+    color: #1a1a1a;
+    padding: 60px 0 30px 0;
+    -webkit-transition: 0.3s;
+    -moz-transition: 0.3s;
+    -ms-transition: 0.3s;
+    -o-transition: 0.3s;
+    transition: 0.3s;
+}
+
+#crossfit-section h2:hover {
+    text-shadow: -1px 0 #fff, 0 1px #fff, 1px 0 #fff, 0 -1px #fff;
+}
+
+#crossfit-section p {
+    color: #fff;
+    font-size: 24px;
+    letter-spacing: 1px;
+}
+
+
+/*-- Kickbox --*/
+
+#kickbox-section {
+    width: 100%;
+    height: 650px;
+    background-image: url("../img/parallax-kickbox-bg.jpg");
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+#kickbox-section img {
+    padding: 120px 0;
+    margin: 0 auto;
+    display: block;
+}
+
+#kickbox-section #kickbox-flip {
+    -webkit-transition: 0.5s;
+    -webkit-transform-style: preserve-3d;
+    -moz-transition: 0.5s;
+    -moz-transform-style: preserve-3d;
+    -o-transition: 0.5s;
+    -o-transform-style: preserve-3d;
+    transition: 0.5s;
+    transform-style: preserve-3d;
+    position: relative;
+    -webkit-backface-visibility: hidden;
+    -moz-backface-visibility: hidden;
+    -o-backface-visibility: hidden;
+    backface-visibility: hidden;
+}
+
+#kickbox-section #kickbox-flip:hover {
+    -webkit-transform: rotateY(180deg);
+    -moz-transform: rotateY(180deg);
+    -o-transform: rotateY(180deg);
+    transform: rotateY(180deg);
+    cursor: pointer;
+}
+
+#kickbox-section #kickbox-flip .front,
+#kickbox-section #kickbox-flip .back {
+    -webkit-backface-visibility: hidden;
+    -moz-backface-visibility: hidden;
+    -o-backface-visibility: hidden;
+    backface-visibility: hidden;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+#kickbox-section #kickbox-flip .back {
+    background-image: url(../img/kickbox-logo-section-back.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    opacity: 0.7;
+    margin: 120px 0;
+    width: 100%;
+    height: 430px;
+    -webkit-transform: rotateY(180deg);
+    -moz-transform: rotateY(180deg);
+    -o-transform: rotateY(180deg);
+    transform: rotateY(180deg);
+}
+
+#kickbox-section #kickbox-flip .back p {
+    text-align: center;
+    color: #1a1a1a;
+    margin-top: 40%;
+    font-size: 25px;
+}
+
+#kickbox-section h2 {
+    font-size: 40px;
+    color: #1a1a1a;
+    padding: 60px 0 30px 0;
+    -webkit-transition: 0.3s;
+    -moz-transition: 0.3s;
+    -ms-transition: 0.3s;
+    -o-transition: 0.3s;
+    transition: 0.3s;
+}
+
+#kickbox-section h2:hover {
+    text-shadow: -1px 0 #fff, 0 1px #fff, 1px 0 #fff, 0 -1px #fff;
+}
+
+#kickbox-section p {
+    color: #fff;
+    font-size: 24px;
+    letter-spacing: 1px;
+}
+
+
+/*--- KICKBOX PAGE ---*/
+
+#kickbox .paragraf {
+    font-size: 20px;
+    line-height: 30px;
+    text-align: justify;
+    margin: 20px 0;
+}
+
+#kickbox .img-txt {
+    margin: 30px auto;
+    width: 80%;
+    border: 2px solid #bf1c22;
+}
+#kickbox-page #look-down,
+#crossfit-page #look-down{
+    bottom: 0;
+}
+#kickbox-page #look-down img,
+#crossfit-page #look-down img{
+    margin: 12px 4px 0 0;
+}
+
+.img-gallery,
+.video-gallery{
+    display: none;
+}
+.totop {
+    position: fixed;
+    bottom: 10px;
+    right: 20px;
+    padding: 10px;
+    background-color: transparent;
+    text-align: center;
+}
+.totop a {
+    display: none;
+}
+
+
+
+/*--- CROSSFIT PAGE ---*/
+
+#crossfit .paragraf {
+    font-size: 20px;
+    line-height: 30px;
+    text-align: justify;
+    margin: 20px 0;
+}
+
+#crossfit ul.paragraf,
+#crossfit ol.paragraf,
+#crossfit .heading {
+    margin: 0;
+    font-size: 20px;
+}
+
+#crossfit .img-txt {
+    margin: 30px auto;
+    width: 80%;
+    border: 2px solid #bf1c22;
+}
+
+/*--- GALLERY, KICKBOX & CROSSFIT PANELS PAGE ---*/
+
+#gallery,
+#kickbox,
+#crossfit {
+    padding: 0;
+}
+
+#gallery .panel,
+#kickbox .panel,
+#crossfit .panel {
+    border: none;
+    border-radius: 0;
+    margin-bottom: 0;
+}
+
+#gallery .panel-heading,
+#kickbox .panel-heading,
+#crossfit .panel-heading {
+    background-color: #1a1a1a;
+    border-radius: 0;
+    padding: 0;
+    padding-top: 30px;
+}
+
+#gallery .panel-body {
+    border-bottom: 1px solid #1a1a1a;
+}
+
+#gallery .nav-tabs,
+#kickbox .nav-tabs,
+#crossfit .nav-tabs {
+    text-align: center;
+    border-color: #be5458;
+}
+
+#gallery .nav-tabs>li,
+#kickbox .nav-tabs>li,
+#crossfit .nav-tabs>li {
+    width: 40%;
+    float: none;
+    display: inline-block;
+    *display: inline;
+    zoom: 1;
+}
+
+#gallery .nav-tabs>.active a,
+#kickbox .nav-tabs>.active a,
+#crossfit .nav-tabs>.active a {
+    color: #1a1a1a;
+    background-color: #fff;
+}
+
+#gallery .nav-tabs>.active a:hover,
+#gallery .nav-tabs>.active a:hover,
+#gallery .nav-tabs>.active a:hover {
+    background-color: #fff;
+}
+
+#gallery .nav-tabs>li>a,
+#kickbox .nav-tabs>li>a,
+#crossfit .nav-tabs>li>a {
+    color: #fff;
+    padding: 15px 35px;
+    font-size: 20px;
+    background-color: #be5458;
+}
+
+#gallery .nav-tabs>li>a:hover,
+#gallery .nav-tabs>li>a:active,
+#kickbox .nav-tabs>li>a:hover,
+#kickbox .nav-tabs>li>a:active,
+#crossfit .nav-tabs>li>a:hover,
+#crossfit .nav-tabs>li>a:active {
+    background-color: #bf1c22;
+}
+
+
+/*--- GALLERY PAGE ---*/
+
+#gallery {
+    margin-top: 100px;
+}
+
+.show-more-button {
+    text-align: center;
+}
+
+.show-more-button .show-more-btn {
+    background-color: #1a1a1a;
+    color: #fff;
+    padding: 7px 35px;
+    border-radius: 30px;
+    border: 2px solid transparent;
+    box-sizing: border-box;
+}
+
+.show-more-button .show-more-btn:hover {
+    color: #bf1c22;
+    border: 2px solid #bf1c22;
+}
+
+
+/*-- photo gallery section --*/
+
+.img-gallery {
+    margin-bottom: 30px;
+}
+
+.img-gallery img {
+    border: 2px solid #bf1c22;
+}
+
+.img-gallery img:hover {
+    box-shadow: 0 0 20px #bf1c22;
+}
+
+
+/*-- video gallery section --*/
+
+.video-gallery {
+    margin-bottom: 30px;
+}
+
+.video-gallery iframe {
+    border: 2px solid #bf1c22;
+}
+
+
+/*--- KICKBOX & CROSSFIT PAGE ---*/
+
+#trening-tabs .col-md-4 {
+    text-align: center;
+    margin-top: 20px;
+}
+
+#trening-tabs .img-round {
+    margin-top: 20px;
+    display: inline-block;
+}
+
+#trening-tabs h2 {
+    font-size: 24px;
+}
+
+#trening-tabs hr {
+    border: 1px solid #bf1c22;
+    margin: 0;
+}
+
+#trening-tabs p {
+    font-size: 16px;
+    margin-top: 10px;
+}
+
+#training-terms .row {
+    display: flex;
+    margin: 20px auto;
+}
+
+#training-terms #training-txt {
+    flex: 1;
+    border-top: 1px solid #bf1c22;
+    border-bottom: 1px solid #bf1c22;
+}
+
+#training-terms #training-txt .contact-us-btn {
+    margin: 20px 0;
+    background-color: #1a1a1a;
+    color: #fff;
+    padding: 7px 35px;
+    border-radius: 30px;
+    border: 2px solid transparent;
+    box-sizing: border-box;
+}
+
+#training-terms #training-txt .contact-us-btn:hover {
+    color: #bf1c22;
+    border: 2px solid #bf1c22;
+}
+
+#training-terms #training-img {
+    flex: 1;
+}
+
+
+/*--- CROSSFIT PAGE ---*/
+
+
+/*--- BLOG PAGE ---*/
+
+
+/*-- section --*/
+
+
+/*--- ABOUT US PAGE ---*/
+
+#about-us-page p {
+    font-size: 22px;
+    letter-spacing: 1px;
+}
+
+#about-us-page h2 {
+    font-size: 40px;
+    padding: 30px 0 15px 0;
+}
+
+#about-us-page #about-us h2:hover {
+    text-shadow: none;
+}
+
+#about-us-page #business-cooperation {
+    padding: 0 0 50px 0;
+    letter-spacing: 2px;
+}
+
+#about-us-page #business-cooperation h4 {
+    padding: 0;
+    margin-left: 0;
+    text-align: center;
+    font-size: 25px;
+    color: #bf1c22;
+}
+
+#about-us-page #business-cooperation p {
+    text-align: center;
+}
+
+#about-us-page #business-cooperation #business-border-right {
+    border-right: 2px solid #fff;
+}
+
+#about-us-page #partners-part .well {
+    background-color: #fff;
+    border: none;
+    -webkit-box-shadow: none;
+    box-shadow: none;
+}
+#about-us-page #partners-part{
+    display: none;
+}
+#about-us-page .carousel-control.right,
+#about-us-page .carousel-control.left{
+    background-image: none;
+}
+
+
+/*--- CONTACT PAGE ---*/
+
+#contact-form-info {
+    width: 100%;
+    height: auto;
+    margin: 0;
+    padding: 40px 30px;
+    background-color: #eef1ec;
+    margin-top: 100px;
+}
+
+#contact-form-info h2 {
+    font-size: 40px;
+    color: #1a1a1a;
+    padding: 0 0 20px 0;
+}
+
+
+/*-- contact form section --*/
+
+.form-control {
+    height: 45px;
+    font-size: 18px;
+    color: #1a1a1a;
+    background-color: #fff;
+    border: 2px solid #bf1c22;
+    border-radius: 0px;
+}
+
+#contact-form-info .btn-send {
+    width: 100%;
+    height: 45px;
+    background-color: #bf1c22;
+    padding: 6px 12px;
+    margin-top: 15px;
+    color: #fff;
+    font-size: 18px;
+    border-radius: 0px;
+    border: 2px solid #fff;
+}
+
+#contact-form-info .btn-send:hover {
+    background-color: #1a1a1a;
+    border: 2px solid #bf1c22;
+}
+
+.form-horizontal .control-label {
+    text-align: center;
+    font-size: 18px;
+}
+
+
+/*-- contact info section --*/
+
+#contact-info {
+    text-align: center;
+}
+
+#contact-info #contact-logo {
+    display: inline-block;
+    margin-top: 20px;
+}
+
+#contact-txt {
+    background-color: #fff;
+    border: 2px solid #bf1c22;
+    margin: 30px auto;
+    text-align: center;
+}
+
+#contact-txt ul {
+    padding-left: 0!important;
+}
+
+#contact-txt ul li {
+    list-style-type: none;
+    padding: 5px 0;
+    color: #727272;
+}
+
+#contact-txt ul li a {
+    color: #727272;
+}
+
+#contact-txt #social-icon-contact {
+    margin: 17px 0;
+}
+
+#contact-txt #social-icon-contact li {
+    display: inline;
+}
+
+
+/*-- google map section --*/
+
+#google-map {
+    padding: 0;
+    margin: 0;
+}
+
+#bg-map {
+    position: absolute;
+    width: 100%;
+    height: 630px;
+    background-color: rgba(191, 28, 34, 0.6);
+    display: none;
+}
+
+#map-canvas {
+    width: 100%;
+    height: 630px;
+}
+
+.gm-style-iw {
+    text-align: center;
+}
+
+img.google-map-logo {
+    width: 50%;
+}
+
+#before-footer-logos {
+    width: 100%;
+    min-height: 100px;
+    display: inline-block;
+}
+
+#before-footer-logos img {
+    display: inline-block;
+}
+
+#before-footer-logos div:first-child {
+    text-align: right;
+    padding: 10px;
+}
+
+#before-footer-logos div:nth-child(2) {
+    text-align: center;
+    padding: 10px;
+}
+
+#before-footer-logos div:last-child {
+    text-align: left;
+    padding: 10px;
+}
+
+
+/*== FOOTER ==*/
+
+#footer {
+    background-color: #1a1a1a;
+    padding: 80px 0 40px 0;
+}
+
+#footer h5 {
+    color: #b7b6b6;
+    font-size: 20px;
+}
+
+#footer ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+#footer ul li {
+    color: #727272;
+}
+
+#contact-us ul li span {
+    margin-right: 7px;
+}
+
+#contact-us,
+#training-period {
+    border-right: 1px solid #fff;
+}
+
+#contact-us ul li a,
+#training-period ul li span {
+    color: #be5458;
+}
+
+#social-network ul li {
+    display: inline;
+}
+
+#social-network ul li a img:hover {
+    transform: rotate(360deg);
+    transition: all 0.3s ease-in-out 0s;
+}
+
+#copyright {
+    width: 100%;
+    background-color: #141414;
+    padding: 10px 0;
+    text-align: center;
+}
+
+#copyright a {
+    color: #333;
+}
+
+#copyright a:hover {
+    color: #fff;
+}
+
+#copyright p {
+    margin: 0;
+    font-size: 11px;
+}
+
+
+/*==  Responsive Non-Mobile First Method  ==*/
+
+
+/* Large Devices, Wide Screens */
+
+@media only screen and (max-width: 1200px) {
+    .carousel,
+    .item,
+    .active,
+    .carousel-inner,
+    #crossfit-section,
+    #kickbox-section {
+        height: auto;
+    }
+    /*--- business cooperation ---*/
+    #look-down{
+        bottom: 115px;
+    }
+    #business-cooperation .container {
+        padding: 0;
+    }
+    #business-cooperation .btn {
+        margin: 41px 30px;
+    }
+    #business-cooperation h4 {
+        margin-left: 0;
+    }
+    /*--- crossfit&kickbox selection - flip effect ---*/
+    #crossfit-section #crossfit-flip .back,
+    #kikcbox-section #kikcbox-flip .back {
+        background-size: contain;
+    }
+    #kickbox-page #look-down,
+    #crossfit-page #look-down{
+        display: none;
+    }
+    /*===gallery page===*/
+    #gallery {
+        margin-top: 90px;
+    }
+    /*===about us page===*/
+    #about-us-page #about-us {
+        margin-top: 95px;
+    }
+    /*===contact page===*/
+    #contact-form-info{
+        margin-top: 90px;
+    }
+}
+
+
+/* Medium Devices, Desktops */
+
+@media only screen and (max-width: 992px) {
+    /*--- resonsive menu ---*/
+    header .navbar-logo img,
+    header.smaller .navbar-logo img {
+        width: 75px;
+        height: auto;
+        float: left;
+    }
+    .sidenav {
+        display: block;
+    }
+    /*--- business cooperation ---*/
+    #business-cooperation {
+        text-align: center;
+    }
+    #business-cooperation h4 {
+        padding: 10px;
+    }
+    #business-cooperation .btn {
+        margin: 0px 0 30px 0;
+    }
+    #about-us-flip img:hover,
+    #crossfit-section #crossfit-flip:hover,
+    #kickbox-section #kickbox-flip:hover {
+        -webkit-transform: rotateY(0deg);
+        -moz-transform: rotateY(0deg);
+        -o-transform: rotateY(0deg);
+        transform: rotateY(0deg);
+        cursor: default;
+    }
+    #about-us,
+    #crossfit-section,
+    #kickbox-section {
+        padding: 0 20px 20px 20px;
+        text-align: center;
+    }
+    /*===about us page===*/
+    #about-us-page #about-us {
+        margin-top: 70px;
+    }
+    #about-us-page p {
+        text-align: center;
+    }
+    #about-us img {
+        padding: 40px 0 0 0;
+    }
+    #about-us h2,
+    #about-us-page h2 {
+        padding: 20px;
+        text-align: center;
+    }
+    /*--- crossfit section ---*/
+    #crossfit-respo-logo img {
+        padding: 40px 0 0 0;
+    }
+    #crossfit-section #crossfit-flip {
+        display: none;
+    }
+    /*--- kickbox section ---*/
+    #kickbox-section img {
+        padding: 40px 0 0 0;
+    }
+    #kickbox-section h2 {
+        padding: 0 0 30px 0;
+    }
+    #kickbox-section #kickbox-flip .front {
+        position: static;
+    }
+    #crossfit-section #crossfit-flip .back {
+        display: none;
+    }
+    /*--- kickbox & crossfit page ---*/
+    #training-terms .row {
+        display: block;
+    }
+    #training-terms #training-txt {
+        flex: none;
+        margin: 20px auto;
+        text-align: center!important;
+    }
+    #training-terms #training-img {
+        text-align: center;
+        padding: 0;
+    }
+    #training-terms #training-img img {
+        display: inline-block;
+    }
+    /*===about us page===*/
+    #about-us-page #business-cooperation #business-border-right {
+        border-right: none;
+    }
+    #about-us-page #business-cooperation {
+        padding: 15px;
+    }
+    /*===gallery page===*/
+    #gallery {
+        margin-top: 70px;
+    }
+    /*===contact page===*/
+    #contact-form-info{
+        margin-top: 70px;
+    }
+    /*-- footer --*/
+    #footer {
+        padding: 40px 0;
+    }
+    #footer ul,
+    #footer h5 {
+        text-align: center;
+    }
+    #contact-us,
+    #training-period {
+        border-right: none;
+    }
+}
+
+
+/* Small Devices, Tablets */
+
+@media only screen and (max-width: 768px) {
+    /*--- responsive menu ---*/
+    header#header-menu .container {
+        border-bottom: none;
+    }
+    section h2 {
+        padding: 20px 0!important;
+        font-size: 40px!important;
+    }
+    section p {
+        font-size: 20px!important;
+    }
+    /*--- business cooperation ---*/
+    #look-down{
+        bottom: 120px;
+    }
+    /*--- Before footer logos ---*/
+    #before-footer-logos div:first-child,
+    #before-footer-logos div:nth-child(2),
+    #before-footer-logos div:last-child {
+        text-align: center;
+    }
+    /*--- footer ---*/
+    #footer {
+        padding: 30px 0;
+    }
+    /*===kickbox&crossfit page===*/
+    #trening-tabs .img-round,
+    #trening-tabs h2 {
+        margin: 0;
+        padding: 15px 0 0 0;
+        font-size: 20px;
+    }
+    #about-tabs p,
+    #crossfit-tabs p.paragraf {
+        font-size: 20px;
+        text-align: center;
+        line-height: normal;
+    }
+    #about-tabs h3,
+    #crossfit-tabs h3 {
+        font-size: 20px;
+        padding: 20px 0 0 0;
+        text-align: center;
+    }
+    /*===about us page===*/
+    #about-us-page h2 {
+        font-size: 25px;
+    }
+    #about-us-page p {
+        font-size: 20px;
+    }
+}
+
+
+/* Extra Small Devices, Phones */
+
+@media only screen and (max-width: 480px) {
+    h1,
+    h2,
+    h3,
+    h1,
+    h2,
+    h3 {
+        margin-top: 0;
+        padding: 20px 0;
+    }
+    /*--- slider ---*/
+    .carousel-caption {
+        right: 20%;
+        left: 20%;
+        padding-bottom: 0;
+    }
+    .carousel-caption h3 {
+        font-size: 16px;
+    }
+    /*===front page===*/
+    section {
+        text-align: center;
+        padding: 0!important;
+    }
+    section h2 {
+        padding: 20px 0!important;
+        font-size: 30px!important;
+        margin: 0;
+    }
+    section p {
+        font-size: 16px!important;
+        padding-bottom: 35px;
+    }
+    section img.main-section-logo {
+        padding: 0 5%!important;
+        margin-bottom: 20px!important;
+    }
+    /*--- business cooperation ---*/
+    #look-down{
+        display: none;
+    }
+    /*--- crossfit&kickbox section ---*/
+    #crossfit-respo-logo img {
+        margin: 40px 0 0 0;
+    }
+    #kickbox-section img {
+        margin: 0;
+    }
+    #about-us .btn {
+        padding: 10px 15px;
+    }
+    /*===kickbox & crossfit page===*/
+    #kickbox-page #about-tabs p,
+    #crossfit-page #crossfit-tabs p,
+    #crossfit-page #crossfit-tabs ul.paragraf,
+    #crossfit-page #crossfit-tabs ol.paragraf {
+        font-size: 16px;
+        line-height: normal;
+        text-align: center;
+    }
+    #crossfit-page #crossfit-tabs ul.paragraf,
+    #crossfit-page #crossfit-tabs ol.paragraf {
+        text-align: left;
+    }
+    li.crossfit-tab-mobile a {
+        font-size: 12px!important;
+    }
+    #training-terms #training-txt {
+        padding: 20px 0;
+    }
+    #training-terms #training-txt .contact-us-btn {
+        padding: 10px;
+    }
+    /*===gallery page===*/
+    #gallery .panel-heading {
+        padding-top: 20px;
+        line-height: normal;
+    }
+    #gallery .nav-tabs>li>a {
+        padding: 10px;
+        font-size: 17px;
+    }
+    #kickbox .nav-tabs>li>a,
+    #crossfit .nav-tabs>li>a {
+        padding: 10px;
+        font-size: 17px;
+    }
+    /*===about us page===*/
+    #about-us-page p {
+        font-size: 16px;
+        padding: 0;
+    }
+    #about-us-page #business-cooperation h4 {
+        font-size: 20px;
+    }
+    #about-us img {
+        margin-top: 40px;
+        padding: 0!important;
+    }
+    /*===contact page===*/
+    /*===equipment page===*/
+}
+
+
+/* Custom, iPhone Retina */
+
+@media only screen and (max-width: 320px) {
+    /*--- slider ---*/
+    .carousel-control,
+    .carousel-caption h3 {
+        display: none;
+    }
+    /*===gallery page===*/
+    #gallery .nav-tabs>li>a {
+        padding: 5px 10px;
+        font-size: 12px;
+    }
+    #gallery .panel-body {
+        padding: 0;
+        margin-top: 30px;
+    }
+}
